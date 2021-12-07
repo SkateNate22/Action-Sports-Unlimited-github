@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="MTEtMzAtMjAyMSA2OjQ1cG0gLSBBY3Rpb24gU3BvcnRzIFVubGltaXRlZA=="
+    />
+    <title>Action Sports Unlimited</title>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+      integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Fancyapp CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- Fancyapp JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- left sidebar offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Nothing to see here folks
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <div class="mascot">
+            <img
+              src="images/general/Help.jpg"
+              class="cropped-offcanvas"
+              alt="help"
+            />
+          </div>
+          <br />
+          <blockquote>
+            Help! Let me out of here! Help!
+            <cite>Daffy Duck</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          IMPORTANT NOTICES
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small">
+        <div class="alert alert-danger text-center alert-offcanvas-bottom">
+          <p>
+            <strong>Existing Participants</strong> We will be closed on
+            Thursday, November 25 and 26, 2021 in observance of the Thanksgiving
+            holiday! Services will resume on Saturday, November 27 at regular
+            hours.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- logo -->
+    <div class="container-fluid top-logo text-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasBottom"
+              >info
+            </a>
+          </span>
+          <span class="material-icons-outlined material-icon md-60">
+            <a class="sidebar-icon" href="gallery.html">
+              photo_camera
+            </a>
+          </span>
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+              >menu
+            </a>
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          Action Sports Unlimited
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/carousel/Skater1.2.jpg"
+            class="d-block w-100"
+            alt="Skate"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Skate</h5>
+            <p>
+              Purpose-built recreational environments made for skateboarding
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/Snowboard1.2.jpg"
+            class="d-block w-100"
+            alt="Snowboard"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Snow</h5>
+            <p>Experience world-class skiing and snowboarding</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/Surfer1.2.jpg"
+            class="d-block w-100"
+            alt="Surf"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Surf</h5>
+            <p>Discover the best surf spots in the world</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe
+        src="https://www.youtube.com/embed/Si690zM-52Y?rel=0"
+        title="YouTube video"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!--end carousel-->
+
+    <!-- Font Awesome -->
+    <div class="container-fluid fa-row text-center">
+      <div class="row">
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.liveforlivemusic.com/" target="_blank">
+            <i class="fab fa-itunes-note fa-row-icon"></i>
+          </a>
+          <br />Music
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.snowboarder.com/" target="_blank">
+            <i class="fas fa-snowboarding fa-row-icon"></i>
+          </a>
+          <br />Snowboarding
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.digbmx.com/" target="_blank">
+            <i class="fas fa-biking fa-row-icon"></i>
+          </a>
+          <br />Biking
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.skateboarding.transworld.net/" target="_blank">
+            <i class="fas fa-running fa-row-icon"></i>
+          </a>
+          <br />Skateboarding
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.surfer.com/" target="_blank">
+            <i class="fas fa-water fa-row-icon"></i>
+          </a>
+          <br />Surfing
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.grubhub.com/" target="_blank">
+            <i class="fas fa-pizza-slice fa-row-icon"></i>
+          </a>
+          <br />Food
+        </div>
+      </div>
+    </div>
+
+    <!-- dummy paragraph -->
+    <div class="container volunteer-div">
+      <div class="row">
+        <div class="col">
+          <img
+            src="images/general/about2.jpg"
+            class="img-responsive volunteer-img"
+            alt="About Image"
+          />
+          <h2>About</h2>
+          <p>
+            Amazing, inspiring feats of daring and determination that will bring
+            you everywhere from the high skies to the deep sea. Stay with us and
+            get the latest news, videos, trick & tips, resort guides and gear
+            reviews about surfing, snowboarding and skateboarding.
+          </p>
+          <p>
+            Action Sports Unlimited launched in 60 countries across the world in
+            1999. Action Sports Unlimited has since established the brand as a
+            pioneer and leader in the destinations and media sectors. It now
+            delivers unforgettable experiences and campaigns in unique locations
+            globally.
+          </p>
+          <p>
+            Action Sports Unlimited works in partnership with brands, tourism
+            authorities, property developers and events rights holders around
+            the world. Across all areas, the company supports and helps to
+            develop projects through its brands and funded marketing. It also
+            sponsors and supports 128 athletes. Action Sports Unlimited is
+            involved in delivering and broadcasting over 80 annual events.
+            Through its digital media and publishing network which reaches
+            around 100 million people per month, via 50 million views, it
+            develops targeted social media and marketing campaigns.
+          </p>
+
+          <div>
+            <a href="form.html" class="btn btn-outline-primary btn-volunteer">
+              Volunteer
+            </a>
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    <!-- end dummy paragraph -->
+
+    <!-- gallery -->
+    <div class="container text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/bmx1.jpg">
+            <img
+              data-aos="flip-left"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/bmx1.jpg"
+              alt="bmx"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/skater2.jpg">
+            <img
+              data-aos="flip-left"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/skater2.jpg"
+              alt="Skater"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/snowboard2.jpg">
+            <img
+              data-aos="flip-left"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/snowboard2.jpg"
+              alt="snowboarder"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/skater2.jpg">
+            <img
+              data-aos="flip-left"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/surfer2.jpg"
+              alt="surfer"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row gallery-button">
+        <div class="col-12 text-center">
+          <a class="btn btn-outline-primary btn-gallery" href="gallery.html"
+            >View Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--end gallery-->
+
+    <!-- dummy paragraph contact-->
+    <div class="container contact-div">
+      <div class="row">
+        <div class="col">
+          <img
+            src="images/general/contact2.jpg"
+            class="img-responsive contact-img"
+            alt="Contact Image"
+          />
+          <h2>Contact Information</h2>
+          <p>
+            Adventure Sports and Extreme Sports - also called Action Sports -
+            are not like mainstream sports. They are crawling with rebels,
+            riders, drivers and rock stars. It's not about uniforms, coaches or
+            scripts. Expressing yourself through action is the key. It’s an
+            attitude, a way of life, even a religion. Once you're in, you're in
+            for life.
+          </p>
+          <p>
+            Here at Action Sports Unlimited, we have a whole host of cutting
+            edge data and insights that have been built up over the last 25
+            years. If you have a question or are looking for specific
+            information, then please feel free to contact us and we will be
+            happy to help if we can. As a starting point, take a look at our
+            complete list of adventure and extreme sports across Earth, Water,
+            Snow, Ice and Air.
+          </p>
+          <div>
+            <a href="#footerinfo" class="btn btn-outline-primary btn-contact">
+              Contact
+            </a>
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    <!-- end dummy paragraph -->
+
+    <!-- staff -->
+    <div class="container staff text-center" id="staff">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="zoom-in-right"
+            src="images/staff/thumbs/staff1.1.jpg"
+            class="cropped"
+            alt="Staff1"
+          />
+          <br />
+          <blockquote>
+            Victory Is Always Possible For The Person Who Refuses To Stop
+            Fighting.
+            <cite>Napoleon Hill</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="zoom-in"
+            src="images/staff/thumbs/staff2.1.jpg"
+            class="cropped"
+            alt="Staff2"
+          />
+          <br />
+          <blockquote>
+            The difference between the impossible and the possible lies in a
+            man's determination.
+            <cite>Tommy Lasorda</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="zoom-in-left"
+            src="images/staff/thumbs/staff3.1.jpg"
+            class="cropped"
+            alt="Staff3"
+          />
+          <br />
+          <blockquote>
+            Strength doesn’t come from what you can do. It comes from overcoming
+            the things you once thought you couldn’t.
+            <cite>Rikki Rogers</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer-row text-center" id="footerinfo">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a
+            href="https://en.wikipedia.org/wiki/privacy_policy"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="schedule.html">
+            Schedule
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="form.html">
+            Volunteer
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="mailto:skatenate22@yahoo.com">
+            SkateNate22@Yahoo.com
+          </a>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- social media -->
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook fa-social-media"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram fa-social-media"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter fa-social-media"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end container footer-row -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

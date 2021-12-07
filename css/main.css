@@ -1,0 +1,115 @@
+/*top section*/
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffffff;
+}
+h1,
+h2 {
+  color: var(--accentColor);
+}
+
+.top-logo {
+  height: auto;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  font-size: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.material-icon.md-60,
+.material-icon.md-60 a {
+  font-size: 60px;
+  color: var(--secondaryColor);
+  position: relative;
+  top: 0px;
+}
+
+.sidebar-icon,
+.sidebar-icon a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--dominantColor);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.btn-search {
+  background-color: var(--secondaryColor);
+  border: 0;
+  color: #000000;
+}
+
+.btn-search:hover {
+  background-color: var(--accentColor);
+  color: #000000;
+}
+/*top section*/
+
+/*bottom section*/
+.footer-row {
+  background-color: var(--dominantColor);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-row a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.fa-social-media,
+.fa-social-media:hover {
+  font-size: 25px !important;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/*bottom section*/
+
+/* pull quote */
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201c";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+.alert-offcanvas-bottom {
+  font-size: 16px;
+}
